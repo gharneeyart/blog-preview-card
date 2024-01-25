@@ -1,0 +1,112 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black:hsl(0, 0%, 7%);
+    --para: 16px;
+}
+/* use a variable to call any val. from the root */
+body{
+    background-color: var(--yellow);
+    max-width: 1440px;
+    min-width: 375px;
+    font-family:"Figtree", "Sans-serif";
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height: 540px;
+    width: 400px;
+    background-color:var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+
+    
+}
+.container-image{
+    height: 200px;
+    width: 370px;
+   
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
+    
+}
+.container-image img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    object-fit: cover;
+    /* height: 215px; */
+}
+.container-body{
+    height: 320px;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.learning{
+    margin: 2rem 0;
+   
+}
+.learning b{
+    background-color: var(--yellow);
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.learning p{
+    color: var(--black);
+    font-size: var(--para);
+    margin-top: 1.5rem;
+    
+}
+
+.foundation h2{
+    color: var(--black);
+
+}
+.foundation p{
+    color: var(--grey);
+    margin-top: 1rem;
+    font-size: var(--para);
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;}
+     /* margin-bottom: 2rem;/
+}
+/* if the image is not round, you will use border radius of 50% */
+.avatar img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+/* box-shadow: 10px 10px;
+    border-radius: 15px; */
+
